@@ -1,0 +1,6 @@
+<image class="title" src="/images/title.bmp"></image>
+<view>
+  <image class="diary" src="/images/title.bmp"></image>
+  <image class="story" src="/images/title.bmp"></image>
+  <image class="cloud" src="/images/title.bmp"></image>
+</view>
