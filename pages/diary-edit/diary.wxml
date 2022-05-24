@@ -1,0 +1,16 @@
+
+
+<view class="content" hover-class="contentHover">
+这一刻的想法...
+</view>
+
+<view class="box">
+<view class="photo" hover-class="photoHover">
+    <image mode ="heightFix" class= "Post-Image" src="http://m.qpic.cn/psc?/V11mssha4ZUW25/45NBuzDIW489QBoVep5mcfmILugZipFkBFJepjS3DydrBI6Ey7X6VU4xg5Oz8HB1USC0iX81YbO.jPqi75gY*YO76OQzkKbA9uhhD86j16A!/b&bo=AAIAAgAAAAADFzI!&rf=viewer_4"></image>添加照片</view>
+</view>
+
+<view class="upload" hover-class="uploadHover">上传</view>
+
+<view class="location" hover-class="locationHover">所在位置</view>
+<view class="mention" hover-class="mentionHover">提醒谁看</view>
+<view class="visible" hover-class="visibleHover">谁可见</view>

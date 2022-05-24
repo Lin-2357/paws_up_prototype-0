@@ -1,0 +1,21 @@
+  <view class="bar" style="z-index: 1;">
+    <view class="p">
+      <text style="color: white;">探店新闻</text>
+    </view>
+    <view class="u"><text style="color: white;">--总览</text>
+      </view>
+  </view>
+  <view style="height: 27vw; opacity: 0;"><!--placeholder-->
+  </view>
+  <view wx:for="{{sections}}" wx:key="*this" wx:for-item="x" wx:for-index="i" class = "box">
+    <text class = "title">{{x.topic}}</text>
+    <swiper autoplay interval = "10000" circular indicator-dots indicator-color="#de9c9c" indicator-active-color = "#464646" class = "swip">
+      <swiper-item class="grids" wx:for="{{x.content}}" wx:key="*this" wx:for-item="y" wx:for-index="j">
+        <navigator url="{{y.link}}" class="img">
+          <image style="height: 100%; width: 53.6vw; border-top-left-radius: 10%; border-bottom-left-radius: 10%;" src="{{y.image}}"></image>
+          <view style="height: 100%; width: 13.4vw;" >{{y.content}}</view>
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+

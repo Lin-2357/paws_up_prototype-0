@@ -1,0 +1,81 @@
+.section-grid {
+  /** from xiaowen */
+  display: grid;
+  text-align: center;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 2.5%;
+  margin-top: 2.5%;
+  grid-template-columns: repeat(auto-fit, calc(100% / 3 - 20px * 1 / 3));
+  justify-content:center;
+  grid-gap:1ch;
+}
+
+.section-name {
+  /** from xiaowen */
+  display: grid;
+  border: 1px solid grey;
+}
+
+.content-year {
+  font-size: 50px;
+  font-weight: 700;
+  color:#F3989B;
+  margin-left: 5%;
+}
+
+.content-month {
+  font-size: 40px;
+  font-weight: 700;
+  margin-left: 5%;
+}
+
+.content-date {
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: 5%;
+}
+
+.content {
+  margin-left: 5%;
+}
+
+.box{
+  margin-left: 5%;
+  width: 60px;
+  height: 60px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.image {
+  display: block;
+  width: 80%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  margin-bottom: auto;
+  border-radius: 50%;
+}
+
+.text{
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 5%;
+  margin-left: 3%;
+}
+
+.post-text{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.post-image{
+  width: 60%;
+  margin-left: 20%;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}

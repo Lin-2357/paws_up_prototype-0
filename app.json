@@ -1,15 +1,20 @@
 {
   "pages":[
     "pages/homepage/home",
-    "pages/index/index",
+    "pages/story/story",
+    "pages/cloud/cloud",
+    "pages/post/post",
+    "pages/diary/diary",
+    "pages/diary-edit/diary",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "Paws Up",
     "navigationBarTextStyle":"black"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
 }

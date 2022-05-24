@@ -1,0 +1,28 @@
+<view class="page" style="height: 100%;">
+  <view class="bar" style="z-index: 1;">
+    <view class="p">
+      <text>Shelter </text>
+      <text>News</text>
+    </view>
+    <view class="u">--
+      <text>shelter </text>
+      <text>name</text></view>
+  </view>
+  <view class="page" style="z-index: 0;">
+    <view style="opacity: 0; height:25vw;">placeholder</view>
+    <view wx:for="{{article}}" wx:key="*this" class="t1" wx:for-index="i" wx:for-item="x">
+      <view class="t2">{{x[0]}}
+      </view>
+      <view class="t3">
+        <view wx:for="{{x[1]}}" wx:key="*this" wx:for-index="j" wx:for-item="y">
+          <view style="font-size: large; white-space:pre-wrap; margin-top: 5%; margin-bottom: 5%">{{y[0]}}</view>
+          <view style="white-space:pre-wrap;">{{y[1]}}</view>
+        </view>
+      </view>
+      <view wx:for="{{x[2]}}" style="width: 100%; display: flex; flex-direction: column; align-items: center;" wx:key="*this">
+        <image src="{{item}}" mode="widthFix" style="margin-top: 0.5vh; margin-bottom: 0.5vh;"></image>
+      </view>
+    </view>
+    <view style="opacity: 0; height:8vh;">placeholder</view>
+  </view>
+</view>

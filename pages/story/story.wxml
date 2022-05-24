@@ -1,0 +1,182 @@
+<!--pages/index/pawsUp.wxml-->
+<!--The Heading-->
+<view class = "bar">
+<view class="heading" hover-class = "BoxHover"> <span class = "Paws"> Paws </span> Up <span class = "story"> 故事专栏</span></view>
+
+</view>
+
+<!--The Body Posts-->
+<!--placeholder--><view class="bar" style="opacity:0;position:relative"></view>
+
+<view class = "body-grid"> 
+<!--
+<view class = "{{0==active?'body-grid cur':'body-grid Tabs'}}">
+<navigator url = "../post/post">
+<view class = "Posts"> 
+<image mode ="heightFix" class= "Post-Image" src="http://m.qpic.cn/psc?/V11mssha4ZUW25/45NBuzDIW489QBoVep5mcfmILugZipFkBFJepjS3DydrBI6Ey7X6VU4xg5Oz8HB1USC0iX81YbO.jPqi75gY*YO76OQzkKbA9uhhD86j16A!/b&bo=AAIAAgAAAAADFzI!&rf=viewer_4"></image>
+<view class = "Post-Text"> 遇到哈士奇</view></view>
+</navigator>
+
+<navigator url = "../post/post">
+<view class = "Posts"> 
+  <image mode ="heightFix" class= "Post-Image" src="http://m.qpic.cn/psc?/V11mssha4ZUW25/45NBuzDIW489QBoVep5mcfmILugZipFkBFJepjS3DydrBI6Ey7X6VU4xg5Oz8HB1USC0iX81YbO.jPqi75gY*YO76OQzkKbA9uhhD86j16A!/b&bo=AAIAAgAAAAADFzI!&rf=viewer_4"></image>
+<view class = "Post-Text">  养狗必知的5件事情 </view></view>
+</navigator>
+
+<navigator url = "../post/post">
+<view class = "Posts"> 
+  <image mode ="heightFix" class= "Post-Image" src="http://m.qpic.cn/psc?/V11mssha4ZUW25/45NBuzDIW489QBoVep5mcfmILugZipFkBFJepjS3DydrBI6Ey7X6VU4xg5Oz8HB1USC0iX81YbO.jPqi75gY*YO76OQzkKbA9uhhD86j16A!/b&bo=AAIAAgAAAAADFzI!&rf=viewer_4"></image>
+<view class = "Post-Text"> 铲屎官的一天 </view></view>
+</navigator>
+
+<navigator url = "../post/post">
+<view class = "Posts"> 
+  <image mode ="heightFix" class= "Post-Image" src="http://m.qpic.cn/psc?/V11mssha4ZUW25/45NBuzDIW489QBoVep5mcfmILugZipFkBFJepjS3DydrBI6Ey7X6VU4xg5Oz8HB1USC0iX81YbO.jPqi75gY*YO76OQzkKbA9uhhD86j16A!/b&bo=AAIAAgAAAAADFzI!&rf=viewer_4"></image>
+<view class = "Post-Text"> 我家英短2岁了！ </view></view>
+</navigator>
+
+<navigator url = "../post/post">
+<view class = "Posts"> 
+  <image mode ="heightFix" class= "Post-Image" src="http://m.qpic.cn/psc?/V11mssha4ZUW25/45NBuzDIW489QBoVep5mcfmILugZipFkBFJepjS3DydrBI6Ey7X6VU4xg5Oz8HB1USC0iX81YbO.jPqi75gY*YO76OQzkKbA9uhhD86j16A!/b&bo=AAIAAgAAAAADFzI!&rf=viewer_4"></image>
+<view class = "Post-Text"> 崽崽取名 </view></view>
+</navigator>
+
+<navigator url = "../post/post">
+<view class = "Posts"> 
+  <image mode ="heightFix" class= "Post-Image" src="http://m.qpic.cn/psc?/V11mssha4ZUW25/45NBuzDIW489QBoVep5mcfmILugZipFkBFJepjS3DydrBI6Ey7X6VU4xg5Oz8HB1USC0iX81YbO.jPqi75gY*YO76OQzkKbA9uhhD86j16A!/b&bo=AAIAAgAAAAADFzI!&rf=viewer_4"></image>
+<view class = "Post-Text"> 急！！寻猫启示 </view></view>
+</navigator>
+</view>
+-->
+
+<!--The Body Posts-->
+
+<view wx:for="{{[0,1,2,3]}}" wx:key="sections" class = "{{index==active?posts[active].style[0]:posts[active].style[1]}}">
+  <view wx:for="{{posts[active].content}}" wx:key="posts" >
+  <navigator url = "{{item.link}}" class = "Posts">
+  <image mode ="heightFix" class= "Post-Image" src="{{item.pic}}"></image>
+  <view class = "Post-Text">{{item.title}}</view>
+  </navigator>
+  <!--
+  <navigator url = "../post/post">
+  <view class = "Posts"> 
+    <image mode ="heightFix" class= "Post-Image" src="http://m.qpic.cn/psc?/V11mssha4ZUW25/45NBuzDIW489QBoVep5mcfmILugZipFkBFJepjS3DydrBI6Ey7X6VU4xg5Oz8HB1USC0iX81YbO.jPqi75gY*YO76OQzkKbA9uhhD86j16A!/b&bo=AAIAAgAAAAADFzI!&rf=viewer_4"></image>
+  <view class = "Post-Text">  养猫必知的5件事情 </view></view>
+  </navigator>
+
+  <navigator url = "../post/post">
+  <view class = "Posts"> 
+    <image mode ="heightFix" class= "Post-Image" src="http://m.qpic.cn/psc?/V11mssha4ZUW25/45NBuzDIW489QBoVep5mcfmILugZipFkBFJepjS3DydrBI6Ey7X6VU4xg5Oz8HB1USC0iX81YbO.jPqi75gY*YO76OQzkKbA9uhhD86j16A!/b&bo=AAIAAgAAAAADFzI!&rf=viewer_4"></image>
+  <view class = "Post-Text"> 我不是猫猫 </view></view>
+  </navigator>
+
+  <navigator url = "../post/post">
+  <view class = "Posts"> 
+    <image mode ="heightFix" class= "Post-Image" src="http://m.qpic.cn/psc?/V11mssha4ZUW25/45NBuzDIW489QBoVep5mcfmILugZipFkBFJepjS3DydrBI6Ey7X6VU4xg5Oz8HB1USC0iX81YbO.jPqi75gY*YO76OQzkKbA9uhhD86j16A!/b&bo=AAIAAgAAAAADFzI!&rf=viewer_4"></image>
+  <view class = "Post-Text"> 我家英短2岁了！ </view></view>
+  </navigator>
+
+  <navigator url = "../post/post">
+  <view class = "Posts"> 
+    <image mode ="heightFix" class= "Post-Image" src="http://m.qpic.cn/psc?/V11mssha4ZUW25/45NBuzDIW489QBoVep5mcfmILugZipFkBFJepjS3DydrBI6Ey7X6VU4xg5Oz8HB1USC0iX81YbO.jPqi75gY*YO76OQzkKbA9uhhD86j16A!/b&bo=AAIAAgAAAAADFzI!&rf=viewer_4"></image>
+  <view class = "Post-Text"> 谁家猫猫一起玩 </view></view>
+  </navigator>
+
+  <navigator url = "../post/post">
+  <view class = "Posts"> 
+    <image mode ="heightFix" class= "Post-Image" src="http://m.qpic.cn/psc?/V11mssha4ZUW25/45NBuzDIW489QBoVep5mcfmILugZipFkBFJepjS3DydrBI6Ey7X6VU4xg5Oz8HB1USC0iX81YbO.jPqi75gY*YO76OQzkKbA9uhhD86j16A!/b&bo=AAIAAgAAAAADFzI!&rf=viewer_4"></image>
+  <view class = "Post-Text"> 急！！寻猫启示 </view></view>
+  </navigator>
+
+  -->
+  </view>
+</view>
+<!--
+<view class = "{{2==active?'body-grid cur':'body-grid Tabs'}}"> 
+  <navigator url = "../post/post">
+  <view class = "Posts"> 
+<image mode ="heightFix" class= "Post-Image" src="http://m.qpic.cn/psc?/V11mssha4ZUW25/45NBuzDIW489QBoVep5mcfmILugZipFkBFJepjS3DydrBI6Ey7X6VU4xg5Oz8HB1USC0iX81YbO.jPqi75gY*YO76OQzkKbA9uhhD86j16A!/b&bo=AAIAAgAAAAADFzI!&rf=viewer_4"></image>
+<view class = "Post-Text"> 我养狗</view></view>
+</navigator>
+
+<navigator url = "../post/post">
+<view class = "Posts"> 
+  <image mode ="heightFix" class= "Post-Image" src="http://m.qpic.cn/psc?/V11mssha4ZUW25/45NBuzDIW489QBoVep5mcfmILugZipFkBFJepjS3DydrBI6Ey7X6VU4xg5Oz8HB1USC0iX81YbO.jPqi75gY*YO76OQzkKbA9uhhD86j16A!/b&bo=AAIAAgAAAAADFzI!&rf=viewer_4"></image>
+<view class = "Post-Text"> 我也养狗</view></view>
+</navigator>
+
+<navigator url = "../post/post">
+<view class = "Posts"> 
+  <image mode ="heightFix" class= "Post-Image" src="http://m.qpic.cn/psc?/V11mssha4ZUW25/45NBuzDIW489QBoVep5mcfmILugZipFkBFJepjS3DydrBI6Ey7X6VU4xg5Oz8HB1USC0iX81YbO.jPqi75gY*YO76OQzkKbA9uhhD86j16A!/b&bo=AAIAAgAAAAADFzI!&rf=viewer_4"></image>
+<view class = "Post-Text"> 我不是狗狗 </view></view>
+</navigator>
+
+<navigator url = "../post/post">
+<view class = "Posts"> 
+  <image mode ="heightFix" class= "Post-Image" src="http://m.qpic.cn/psc?/V11mssha4ZUW25/45NBuzDIW489QBoVep5mcfmILugZipFkBFJepjS3DydrBI6Ey7X6VU4xg5Oz8HB1USC0iX81YbO.jPqi75gY*YO76OQzkKbA9uhhD86j16A!/b&bo=AAIAAgAAAAADFzI!&rf=viewer_4"></image>
+<view class = "Post-Text"> 狗狗万岁！ </view></view>
+</navigator>
+
+<navigator url = "../post/post">
+<view class = "Posts"> 
+  <image mode ="heightFix" class= "Post-Image" src="http://m.qpic.cn/psc?/V11mssha4ZUW25/45NBuzDIW489QBoVep5mcfmILugZipFkBFJepjS3DydrBI6Ey7X6VU4xg5Oz8HB1USC0iX81YbO.jPqi75gY*YO76OQzkKbA9uhhD86j16A!/b&bo=AAIAAgAAAAADFzI!&rf=viewer_4"></image>
+<view class = "Post-Text"> 狗狗取名 </view></view>
+</navigator>
+
+<navigator url = "../post/post">
+<view class = "Posts"> 
+  <image mode ="heightFix" class= "Post-Image" src="http://m.qpic.cn/psc?/V11mssha4ZUW25/45NBuzDIW489QBoVep5mcfmILugZipFkBFJepjS3DydrBI6Ey7X6VU4xg5Oz8HB1USC0iX81YbO.jPqi75gY*YO76OQzkKbA9uhhD86j16A!/b&bo=AAIAAgAAAAADFzI!&rf=viewer_4"></image>
+<view class = "Post-Text"> 你好狗狗</view></view>
+</navigator>
+</view>
+
+
+<view class = "{{3==active?'body-grid cur':'body-grid Tabs'}}"> 
+<navigator url = "../post/post">
+<view class = "Posts"> 
+<image mode ="heightFix" class= "Post-Image" src="http://m.qpic.cn/psc?/V11mssha4ZUW25/45NBuzDIW489QBoVep5mcfmILugZipFkBFJepjS3DydrBI6Ey7X6VU4xg5Oz8HB1USC0iX81YbO.jPqi75gY*YO76OQzkKbA9uhhD86j16A!/b&bo=AAIAAgAAAAADFzI!&rf=viewer_4"></image>
+<view class = "Post-Text"> 伯克利养宠物</view></view>
+</navigator>
+
+<navigator url = "../post/post">
+<view class = "Posts"> 
+  <image mode ="heightFix" class= "Post-Image" src="http://m.qpic.cn/psc?/V11mssha4ZUW25/45NBuzDIW489QBoVep5mcfmILugZipFkBFJepjS3DydrBI6Ey7X6VU4xg5Oz8HB1USC0iX81YbO.jPqi75gY*YO76OQzkKbA9uhhD86j16A!/b&bo=AAIAAgAAAAADFzI!&rf=viewer_4"></image>
+<view class = "Post-Text"> 湾区猫咖</view></view>
+</navigator>
+
+<navigator url = "../post/post">
+<view class = "Posts"> 
+  <image mode ="heightFix" class= "Post-Image" src="http://m.qpic.cn/psc?/V11mssha4ZUW25/45NBuzDIW489QBoVep5mcfmILugZipFkBFJepjS3DydrBI6Ey7X6VU4xg5Oz8HB1USC0iX81YbO.jPqi75gY*YO76OQzkKbA9uhhD86j16A!/b&bo=AAIAAgAAAAADFzI!&rf=viewer_4"></image>
+<view class = "Post-Text"> 斯坦福寻狗</view></view>
+</navigator>
+
+<navigator url = "../post/post">
+<view class = "Posts"> 
+  <image mode ="heightFix" class= "Post-Image" src="http://m.qpic.cn/psc?/V11mssha4ZUW25/45NBuzDIW489QBoVep5mcfmILugZipFkBFJepjS3DydrBI6Ey7X6VU4xg5Oz8HB1USC0iX81YbO.jPqi75gY*YO76OQzkKbA9uhhD86j16A!/b&bo=AAIAAgAAAAADFzI!&rf=viewer_4"></image>
+<view class = "Post-Text"> 南湾猫舍 </view></view>
+</navigator>
+
+<navigator url = "../post/post">
+<view class = "Posts"> 
+  <image mode ="heightFix" class= "Post-Image" src="http://m.qpic.cn/psc?/V11mssha4ZUW25/45NBuzDIW489QBoVep5mcfmILugZipFkBFJepjS3DydrBI6Ey7X6VU4xg5Oz8HB1USC0iX81YbO.jPqi75gY*YO76OQzkKbA9uhhD86j16A!/b&bo=AAIAAgAAAAADFzI!&rf=viewer_4"></image>
+<view class = "Post-Text"> 硅谷养狗 </view></view>
+</navigator>
+
+<navigator url = "../post/post">
+<view class = "Posts"> 
+  <image mode ="heightFix" class= "Post-Image" src="http://m.qpic.cn/psc?/V11mssha4ZUW25/45NBuzDIW489QBoVep5mcfmILugZipFkBFJepjS3DydrBI6Ey7X6VU4xg5Oz8HB1USC0iX81YbO.jPqi75gY*YO76OQzkKbA9uhhD86j16A!/b&bo=AAIAAgAAAAADFzI!&rf=viewer_4"></image>
+<view class = "Post-Text"> 松鼠冰淇凌店</view></view>
+</navigator>
+
+</view>
+-->
+</view>
+<view class="botbar" style="opacity: 0; position:relative;"><!--placeholder--></view>
+<!--The Post Sections-->
+<view class="botbar">
+  <scroll-view scroll-x="true"> 
+  <view class ="section-grid" hover-class = "BoxHover"> 
+  <view class = "{{index==active?'section_name cur':'section_name'}}" wx:for="{{section_names}}" wx:key="*this" data-index = "{{index}}" bindtap = "change">{{item}}</view>
+  </view>
+  </scroll-view>
+</view>

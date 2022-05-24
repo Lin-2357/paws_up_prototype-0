@@ -1,0 +1,96 @@
+<view class="section-grid"> 
+ <text class = "section-name"> 我的记录 </text>
+ <text class = "section-name"> 添加记录 </text>
+ <text class = "section-name"> 我的关注 </text>
+ </view>
+
+<text>\n</text>
+
+<view class = "content-year">2022</view>
+<view class = "content-month">3月</view>
+<view class = "content-date">03/01</view>
+
+
+<text>\n</text>
+
+
+<view style="background-color: rgb(250, 210, 217); border-radius: 10%; margin-left: 3%; margin-right: 3%;">
+<text>\n</text>
+
+<view style="display: flex; flex-direction: row;">
+<view class = "box"> 
+<image class= "image" src="http://m.qpic.cn/psc?/V11mssha4ZUW25/ruAMsa53pVQWN7FLK88i5gaVA983yGja6jVG.w7SpavLykWRwyPapLz3kt.BFWRLQpODKrAdeg1f7uhsWlkNBbElqjKZSkqfEwKUM8sR5IM!/mnull=&bo=rQOtAwAAAAABByA!&rf=photolist&t=5"></image></view>
+<text class = "text">旺财 </text>
+</view>
+
+<text>\n</text>
+
+<view class = "post-text">今天旺财很乖，吃了5个馒头。我还带旺财去了公园散心。</view>
+
+<text>\n</text>
+
+<image class = "post-image" src="http://m.qpic.cn/psc?/V51YYzx83bTtBt2j5OsJ4cSlTx19iv8o/45NBuzDIW489QBoVep5mcaaOqCt8v8UXFemN6JPgDeOkZrRPAWDlp7XHiit7bLr9xx9AVV3Y0e4Dn6SS*1627xpFgWmjyf.XrVH7UWHFnJ0!/b&bo=kAGQAQAAAAABFzA!&rf=viewer_4"></image>
+<text>\n</text>
+<text>\n</text>
+</view>
+
+<text>\n</text>
+
+
+
+
+<view class = "content-month">1月</view>
+<view class = "content-date">01/27</view>
+
+
+<text>\n</text>
+
+
+<view style="background-color: rgb(250, 210, 217); border-radius: 10%; margin-left: 3%; margin-right: 3%;">
+<text>\n</text>
+
+<view style="display: flex; flex-direction: row;">
+<view class = "box"> 
+<image class= "image" src="http://m.qpic.cn/psc?/V11mssha4ZUW25/ruAMsa53pVQWN7FLK88i5gaVA983yGja6jVG.w7SpavLykWRwyPapLz3kt.BFWRLQpODKrAdeg1f7uhsWlkNBbElqjKZSkqfEwKUM8sR5IM!/mnull=&bo=rQOtAwAAAAABByA!&rf=photolist&t=5"></image></view>
+<text class = "text">旺财 </text>
+</view>
+
+<text>\n</text>
+
+<view class = "post-text"> 今天旺财什么东西都没有吃，好像是生病了。明天我就带旺财去宠物医院看看，希望他早点好起来！555</view>
+
+<text>\n</text>
+
+<image class = "post-image" src="http://m.qpic.cn/psc?/V51YYzx83bTtBt2j5OsJ4cSlTx19iv8o/45NBuzDIW489QBoVep5mcVWNkSzXK925q2vXUTSWYzTvPE4PAAEl0TQfEY.j8S.4UMkfPuJI6SHunnMew9ao..wx86JzPYTzH*OCJP192NM!/b&bo=6APoAwAAAAABFzA!&rf=viewer_4"></image>
+<text>\n</text>
+<text>\n</text>
+</view>
+
+<text>\n</text>
+
+<view class = "content-year">2021</view>
+<view class = "content-month">2月</view>
+<view class = "content-date">02/08</view>
+
+<text>\n</text>
+
+<view style="background-color: rgb(250, 210, 217); border-radius: 10%; margin-left: 3%; margin-right: 3%;">
+<text>\n</text>
+<view style="display: flex; flex-direction: row;">
+<view class = "box"> 
+<image class= "image" src="http://m.qpic.cn/psc?/V11mssha4ZUW25/ruAMsa53pVQWN7FLK88i5gaVA983yGja6jVG.w7SpavLykWRwyPapLz3kt.BFWRLQpODKrAdeg1f7uhsWlkNBbElqjKZSkqfEwKUM8sR5IM!/mnull=&bo=rQOtAwAAAAABByA!&rf=photolist&t=5"></image></view>
+<text class = "text">旺财 </text>
+</view>
+
+<text>\n</text>
+
+<view class = "post-text">今天我买了一只小狗狗！我给他取名叫旺财。我以后一定会好好对待他的！</view>
+
+<text>\n</text>
+
+<image class = "post-image" src="http://m.qpic.cn/psc?/V51YYzx83bTtBt2j5OsJ4cSlTx19iv8o/45NBuzDIW489QBoVep5mceOmRiWiIYkwtyK1EmlKfCdpHWwSToAOaduJckxWdo92Yh8oKbUqzrGkRoDv7*yKwYYF0kobI6n08NTGpiZnYtE!/b&bo=gAJ7AgAAAAABF8s!&rf=viewer_4"></image>
+<text>\n</text>
+<text>\n</text>
+</view>
+
+<text>\n</text>
