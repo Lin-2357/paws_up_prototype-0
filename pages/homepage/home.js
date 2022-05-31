@@ -4,7 +4,6 @@ const music = wx.getBackgroundAudioManager()
 const pawsup = "http://m.qpic.cn/psc?/V11mssha4ZUW25/ruAMsa53pVQWN7FLK88i5ldPQTjEB7q86xf3.WZMFiznUf6i9kvzPJMCSYLnFuDEgNinIcULPidy4R9GZ91OJrhQkl06OJ9GMtx2hF7p*JA!/mnull&bo=JAQkBAAAAAADByI!&rf=photolist&t=5"
 const defaultUser = {avatarUrl: "http://m.qpic.cn/psc?/V11mssha4ZUW25/45NBuzDIW489QBoVep5mcUGlYSeiJpArwIHXh*N9SoGLYu3WDS5zkWgea4*E6hiurUHoIrdKP89bdjp5*22ALeJ3iOOszxYJioUVsntux*s!/b&bo=.gL6AgAAAAABFzA!&rf=viewer_4", nickName: "未登录"}
 
-
 Page({
 
   /**
@@ -13,14 +12,14 @@ Page({
   data: {
     //按钮样式
     buts: {
-      diary: 
-        {class:'nav diary', words:'wordsp', content:'宠物\n日记', touching:false},
+      /*diary: 
+        {class:'nav diary', words:'wordsp', content:'萌宠\n故事', touching:false},
       cloud: 
-        {class:'nav shelt', words:'wordsn', content:'探店\n新闻', touching:false},
+        {class:'nav shelt', words:'wordsn', content:'活动\n专栏', touching:false},
       story: 
-        {class:'nav story', words:'wordss', content:'故事\n专栏', touching:false},
+        {class:'nav story', words:'wordss', content:'宠物\n朋友圈', touching:false},
       login:
-        {touching:false},
+        {touching:false},*/
     },
     external: [
       ['小红书：', 'PAWS UP'], 
@@ -44,8 +43,18 @@ Page({
         canIUse: false
       })
     }*/
+    this.setbuts();
   },
-
+  setbuts(){
+    getApp().globalData.db.collection('buttons').where({}).get({
+      success: (res) => {
+        // res.data 是一个包含集合中有权限访问的所有记录的数据，不超过 20 条
+        var butsfromdata = {};
+        res.data.forEach(element => butsfromdata[element.name] = element);
+        this.setData({['buts']: butsfromdata});
+      }
+    })
+  },
   touch(event){
     var id = event.target.id
     var classes = this.data.buts[id].class
@@ -64,16 +73,18 @@ Page({
 
   getUserProfile(e) {
     // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认，开发者妥善保管用户快速填写的头像昵称，避免重复弹窗
-    wx.getUserProfile({
-      desc: '展示用户信息', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
-      success: (res) => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-        console.log(this.data.userInfo)
-      }
-    })
+    if(!this.data.hasUserInfo){
+      wx.getUserProfile({
+        desc: '展示用户信息', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
+        success: (res) => {
+          this.setData({
+            userInfo: res.userInfo,
+            hasUserInfo: true
+          })
+          console.log(this.data.userInfo)
+        }
+      })
+    }
   },
 
   direct(event) {

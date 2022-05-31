@@ -1,4 +1,12 @@
 // app.js
+wx.cloud.init({
+  env: 'cloud1-6gsoqrrgdf9781ce'
+})
+
+const db = wx.cloud.database({
+  env: 'cloud1-6gsoqrrgdf9781ce'
+})
+
 App({
   onLaunch() {
     // 展示本地存储能力
@@ -14,6 +22,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    db: db
   }
 })

@@ -14,23 +14,26 @@
     </view>
   </view>
   <view style="width: 100%; z-index: 0;">
-    <view style="width: 100%; height: 30vw; background-color: #DE9C9C;"><!--placeholder--></view>
+    <view style="width: 100%; height: 22vw; background-color: white;"><!--placeholder--></view>
     <view class="backgroundpic">
       <!--<image src="http://m.qpic.cn/psc?/V11mssha4ZUW25/ruAMsa53pVQWN7FLK88i5r7XXcfmcJIEVbGnMdxhpu5zd4W2T4vHxf3Ruub8sHO*s*eRhucMs15jBT8suXxKRL*y9psAWuKeeOPMw6vu4bg!/b&bo=QAZBBwAISQkDKUQ!&rf=viewer_4" style="position: absolute; height: 100%; width: 100%;"></image>-->
-      <view wx:for="{{buts}}" wx:key="mytaps" wx:for-item="x" id="{{index}}" class="{{x.class}}" bindtouchstart="touch" bindtouchstart="touch" bindtouchend="touch" bindtap="direct">
-        <view id="{{index}}" class="{{x.words}}" style="{{x.touching?'color: rgba(205, 205, 205, 1);':''}}">{{x.content}}</view>
+      <view wx:for="{{buts}}" wx:key="mytaps" wx:for-item="x" id="{{index}}" class="{{x.class}}">
+        <view id="{{index}}" class="{{x.words}}" style="{{x.touching?'color: rgba(0, 0, 0, 1);':''}}">{{x.content}}</view>
       </view>
-      <view wx:if="{{canIUse && !hasUserInfo}}" bindtap="getUserProfile" class="{{buts.login.touching?'nav login hov':'nav login'}}" bindtouchstart="touch" bindtouchstart="touch" bindtouchend="touch" id="login">
-        <view class="wordsl" id="login" style="{{buts.login.touching?'color: rgba(205, 205, 205, 1);':''}}">授权\n登录</view>
+      <view wx:for="{{buts}}" wx:key="bg" wx:for-item="x" id="{{index}}" class="{{x.class}}" bindtouchstart="touch" bindtouchend="touch" bindtap="direct" style="background-color: black; {{x.touching?'opacity:0.1;':'opacity:0'}}"></view>
+      <view wx:if="{{canIUse && !hasUserInfo}}" class="{{buts.login.touching?'nav login hov':'nav login'}}" id="login">
+        <view class="wordsl" id="login" style="{{buts.login.touching?'color: rgba(0, 0, 0, 1);':''}}">授权\n登录</view>
       </view>
-      <view wx:else class="{{buts.login.touching?'nav login hov':'nav login'}}" bindtouchstart="touch" bindtouchstart="touch" bindtouchend="touch" bindtap="" id="login">
-        <view id="login" class="wordsl" style="{{buts.login.touching?'color: rgba(205, 205, 205, 1);':''}}">管理\n账号</view>
+      <view wx:else class="{{buts.login.touching?'nav login hov':'nav login'}}" bindtap="" id="login">
+        <view id="login" class="wordsl" style="{{buts.login.touching?'color: rgba(0, 0, 0, 1);':''}}">管理\n账号</view>
       </view>
+      <view id="login" class="{{buts.login.touching?'nav login hov':'nav login'}}" bindtouchstart="touch" bindtouchend="touch" bindtap="getUserProfile" style="background-color: black; {{buts.login.touching?'opacity:0.1;':'opacity:0'}}"></view>
     </view>
     <!--<view style="width: 100%; height: 5vh; background-color: #DE9C9C">placeholder</view>-->
     <view class="extc">
-      <view style="font-size: larger; color:white">Contact Us：</view>
-      <view style="font-weight: 400; color: white;" wx:for="{{external}}" wx:key="exts" wx:for-item="x">
+      <view style="font-size: larger; color:black">更多更新</view>
+      <view style="font-size: larger; color:black">请关注</view>
+      <view style="font-weight: 400; color: black; position: relative; top: 0.5vh" wx:for="{{external}}" wx:key="exts" wx:for-item="x">
       {{x[0]}}<text user-select="true">{{x[1]}}</text></view>
       <view style="height: 2vh;"><!--placeholder--></view>
     </view>

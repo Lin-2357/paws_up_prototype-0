@@ -10,8 +10,8 @@
 } 
 page{
   font-family: 'cosmic';
-  font-weight: 700;
-  background-color: #de9c9c;
+  font-weight: 500;
+  background-color: #B9E4F4;
 }
 /*
 @font-face{
