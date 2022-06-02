@@ -10,16 +10,16 @@
 }
 
 .title{
-    color: white;
-    display: grid;
-    font-weight: 600;
-    text-align: center;
-    margin-top:0%;
-    font-size: 6vw;
-    margin-bottom: 2%;
-    width: 80%;
-    background-color: #464646;
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(211, 237, 240);
     border-radius: 10%;
+    border: 1px solid white;
+    z-index: 1;
 }
 
 .box{
@@ -29,9 +29,41 @@
     align-items: center;
     margin-bottom: 0%;
     margin-top: 0%;
-    border: 1px solid #F3989B;
+    border: 1px solid rgb(172, 218, 226);
     width: 100%;
-    height: 67vw;
+    height: 62vw;
+}
+
+.heading{
+  font-style:normal;
+  /*font-family:Verdana, Geneva, Tahoma, sans-serif;*/
+  font-size: 8vw;
+  font-weight: 700;
+  margin-right: 10% ;
+  margin-left: 8% ;
+  margin-bottom: 2.5%;
+  margin-top: 2.5%;
+  z-index: 3;
+  color: rgb(65, 63, 60);
+}
+
+.subheading{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-right: 10%;
+  margin-left: 67vw;
+  margin-top: 0%;
+}
+
+.subheading-text{
+  text-align: center;
+  font-size: 5vw;
+  font-weight: 500;
+  margin-left: 1.4vw;
+  color: rgb(65, 63, 60);
 }
 
 .round{
@@ -49,14 +81,18 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    margin-top: 4vw;
+    margin-left: 3vw;
 }
 
 .swip{
   background-color: white;
   position:relative;
   width: 80%;
-  height: 80%;
+  height: 70%;
   border-radius: 10%;
+  margin-bottom: 0%;
+  margin-top: 0%;
 }
 
 .grids{

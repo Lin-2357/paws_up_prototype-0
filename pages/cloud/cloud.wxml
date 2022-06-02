@@ -1,19 +1,24 @@
-  <view class="bar" style="z-index: 1;">
-    <view class="p">
-      <text style="color: white;">探店新闻</text>
-    </view>
-    <view class="u"><text style="color: white;">--总览</text>
-      </view>
-  </view>
+<view class = "bar">
+  <view class = "heading">
+    <text style = "color: rgb(65, 63, 60);">活动专栏</text></view> 
+  <view class = "subheading">
+    <view class = "subheading-text">最新动态</view>
+    <image src="http://m.qpic.cn/psc?/V50zprV12UjhIi2rSvWh0YXZ0Q48ois0/ruAMsa53pVQWN7FLK88i5lPls3wVPfiNWVLnQ.3L2faXS9nU38CWCwLrwFrdAUihxQkC5zrwN6lKZ4SDSLsqwtABec88XSQdtcQ2xBJCcPA!/mnull&bo=lADMAAAAAAADB3o!&rf=photolist&t=5" mode="aspectFit" style="width:30px; height:30px;"></image>
+  </view> 
+</view>
+
   <view style="height: 27vw; opacity: 0;"><!--placeholder-->
   </view>
   <view wx:for="{{sections}}" wx:key="*this" wx:for-item="x" wx:for-index="i" class = "box">
-    <text class = "title">{{x.topic}}</text>
-    <swiper autoplay interval = "10000" circular indicator-dots indicator-color="#de9c9c" indicator-active-color = "#464646" class = "swip">
+    <view class = "title">
+      <view class = "subheading-text">{{x.topic}}</view>
+      <image src="{{x.image}}" mode="aspectFit" style="width:25px; height:25px; z-index:3;"></image>
+    </view>
+    <swiper autoplay interval = "10000" circular indicator-dots indicator-color="rgb(70, 70, 70)" indicator-active-color = "rgb(172, 218, 226)" class = "swip">
       <swiper-item class="grids" wx:for="{{x.content}}" wx:key="*this" wx:for-item="y" wx:for-index="j">
         <navigator url="{{y.link}}" class="img">
-          <image style="height: 100%; width: 53.6vw; border-top-left-radius: 10%; border-bottom-left-radius: 10%;" src="{{y.image}}"></image>
-          <view style="height: 100%; width: 13.4vw;" >{{y.content}}</view>
+          <image style="height: 37vw; width: 40vw; border-top-left-radius: 10%; border-bottom-left-radius: 10%;" src="{{y.image}}"></image>
+          <view style="height: 100%; width: 40vw; text-align: center; color:rgb(65, 63, 60); margin-top: 13vw; margin-right: 4vw; font-size: 7vw;">{{y.content}}</view>
         </navigator>
       </swiper-item>
     </swiper>

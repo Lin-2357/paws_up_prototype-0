@@ -11,7 +11,7 @@
 page{
   font-family: 'cosmic';
   font-weight: 700;
-  background-color: #de9c9c;
+  background-color: rgb(172, 218, 226);
 }
 /*
 @font-face{
@@ -25,7 +25,7 @@ page{
   position: fixed;
   height: 25vw;
   width: 100%;
-  background-color: #464646;
+  background-color: rgb(211, 237, 240);
   border-bottom-left-radius: 7%;
   border-bottom-right-radius: 7%;
   z-index: 2;

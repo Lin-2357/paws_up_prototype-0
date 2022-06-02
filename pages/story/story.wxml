@@ -1,8 +1,12 @@
 <!--pages/index/pawsUp.wxml-->
 <!--The Heading-->
 <view class = "bar">
-<view class="heading" hover-class = "BoxHover"> <span class = "Paws"> Paws </span> Up <span class = "story"> 故事专栏</span></view>
-
+  <view class = "heading">
+    <text style = "color: rgb(65, 63, 60);">毛孩子故事集</text></view> 
+  <view class = "subheading">
+    <view class = "subheading-text">热门故事</view>
+    <image src="http://m.qpic.cn/psc?/V50zprV12UjhIi2rSvWh0YXZ0Q48ois0/ruAMsa53pVQWN7FLK88i5lPls3wVPfiNWVLnQ.3L2faXS9nU38CWCwLrwFrdAUihxQkC5zrwN6lKZ4SDSLsqwtABec88XSQdtcQ2xBJCcPA!/mnull&bo=lADMAAAAAAADB3o!&rf=photolist&t=5" mode="aspectFit" style="width:30px; height:30px;"></image>
+  </view> 
 </view>
 
 <!--The Body Posts-->
@@ -54,7 +58,7 @@
 <view wx:for="{{[0,1,2,3]}}" wx:key="sections" class = "{{index==active?posts[active].style[0]:posts[active].style[1]}}">
   <view wx:for="{{posts[active].content}}" wx:key="posts" >
   <navigator url = "{{item.link}}" class = "Posts">
-  <image mode ="heightFix" class= "Post-Image" src="{{item.pic}}"></image>
+  <image mode = "heightFix" class = "Post-Image" src="{{item.pic}}"></image>
   <view class = "Post-Text">{{item.title}}</view>
   </navigator>
   <!--

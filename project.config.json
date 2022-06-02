@@ -49,8 +49,8 @@
     "useStaticServer": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.19.4",
-  "appid": "wx99f7fe9c060582a1",
+  "libVersion": "2.17.0",
+  "appid": "touristappid",
   "projectname": "wechat",
   "condition": {},
   "editorSetting": {
