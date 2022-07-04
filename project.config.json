@@ -51,10 +51,10 @@
   "compileType": "miniprogram",
   "libVersion": "2.19.4",
   "appid": "wx99f7fe9c060582a1",
-  "projectname": "wechat",
-  "condition": {},
+  "projectname": "paws_up_wechat",
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2
-  }
+  },
+  "condition": {}
 }
